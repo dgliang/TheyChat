@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
+import com.example.theychat.util.DateUtil;
+
 @SuppressLint("HandlerLeak")
 public class HandlerMessageActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView tv_message; // 用于显示新闻的播放状态
