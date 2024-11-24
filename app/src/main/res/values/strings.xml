@@ -23,4 +23,6 @@
     <string name="stop_broadcast_news_text">停止播放新闻</string>
     <string name="once_work_text">启动一次性工作</string>
     <string name="period_work_text">启动周期性工作</string>
+    <string name="ui_thread_start_broadcast_news_text">开始播放新闻</string>
+    <string name="ui_thread_stop_broadcast_news_text">停止播放新闻</string>
 </resources>
