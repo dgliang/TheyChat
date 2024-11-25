@@ -25,4 +25,7 @@
     <string name="period_work_text">启动周期性工作</string>
     <string name="ui_thread_start_broadcast_news_text">开始播放新闻</string>
     <string name="ui_thread_stop_broadcast_news_text">停止播放新闻</string>
+    <string name="origin_json_str_text">原始JSON串</string>
+    <string name="convert_json_str_text">转换JSON串</string>
+    <string name="display_json_convert_text">这里查看JSON串的构造和解析结果</string>
 </resources>
