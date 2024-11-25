@@ -28,4 +28,12 @@
     <string name="origin_json_str_text">原始JSON串</string>
     <string name="convert_json_str_text">转换JSON串</string>
     <string name="display_json_convert_text">这里查看JSON串的构造和解析结果</string>
+    <string name="okhttp_call_get_text">GET方式</string>
+    <string name="okhttp_call_post_text">表单POST</string>
+    <string name="okhttp_call_json_post_text">JSON POST</string>
+    <string name="okhttp_call_username_text">用户名：</string>
+    <string name="okhttp_call_input_username_text">请输入用户名</string>
+    <string name="okhttp_call_password_text">密　码：</string>
+    <string name="okhttp_call_input_password_text">请输入密码</string>
+    <string name="okhttp_call_call_text">发起接口调用</string>
 </resources>
