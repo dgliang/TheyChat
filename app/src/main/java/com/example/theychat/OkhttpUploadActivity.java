@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.theychat.constant.NetConst;
+import com.example.theychat.util.BitmapUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -69,38 +70,38 @@ public class OkhttpUploadActivity extends AppCompatActivity {
             Toast.makeText(this, "请选择待上传的用户头像", Toast.LENGTH_SHORT).show();
             return;
         }
-        // 创建分段内容的建造器对象
+
+        // 创建 MultipartBody.Builder，用于构建多部分表单请求
         MultipartBody.Builder builder = new MultipartBody.Builder();
         String username = et_username.getText().toString();
         String password = et_password.getText().toString();
         if (!TextUtils.isEmpty(username)) {
-            // 往建造器对象添加文本格式的分段数据
             builder.addFormDataPart("username", username);
             builder.addFormDataPart("password", password);
         }
-        for (String path : pathList) { // 添加多个附件
-            File file = new File(path); // 根据文件路径创建文件对象
-            // 往建造器对象添加图像格式的分段数据
+        for (String path : pathList) {
+            File file = new File(path);
+
             builder.addFormDataPart("image", file.getName(), RequestBody.create(file, MediaType.parse("image/*"))
             );
         }
-        RequestBody body = builder.build(); // 根据建造器生成请求结构
-        OkHttpClient client = new OkHttpClient(); // 创建一个okhttp客户端对象
-        // 创建一个POST方式的请求结构
+        RequestBody body = builder.build();
+        OkHttpClient client = new OkHttpClient();
+
         Request request = new Request.Builder().post(body).url(URL_REGISTER).build();
-        Call call = client.newCall(request); // 根据请求结构创建调用对象
-        // 加入HTTP请求队列。异步调用，并设置接口应答的回调方法
+        Call call = client.newCall(request);
+
         call.enqueue(new Callback() {
             @Override
-            public void onFailure(@NonNull Call call, @NonNull IOException e) { // 请求失败
-                // 回到主线程操纵界面
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+
                 runOnUiThread(() -> tv_result.setText("调用注册接口报错：\n"+e.getMessage()));
             }
 
             @Override
-            public void onResponse(@NonNull Call call, @NonNull final Response response) throws IOException { // 请求成功
+            public void onResponse(@NonNull Call call, @NonNull final Response response) throws IOException {
                 String resp = response.body().string();
-                // 回到主线程操纵界面
+
                 runOnUiThread(() -> tv_result.setText("调用注册接口返回：\n"+resp));
             }
         });
