@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.theychat.constant.NetConst;
 import com.example.theychat.util.DateUtil;
+import com.example.theychat.util.SocketUtil;
 
 import java.net.URISyntaxException;
 
@@ -48,7 +49,7 @@ public class SocketIOTextActivity extends AppCompatActivity {
     // 初始化套接字
     private void initSocket() {
         // 检查能否连上 Socket 服务器
-        SocketUtil.checkSocketAvaliable(this, NetConst.BASE_IP, NetConst.BASE_PORT);
+        SocketUtil.checkSocketAvailable(this, NetConst.BASE_IP, NetConst.BASE_PORT);
         try {
             String uri = String.format("http://%s:%d/", NetConst.BASE_IP, NetConst.BASE_PORT);
             socket = IO.socket(uri);
