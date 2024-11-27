@@ -68,4 +68,6 @@
     <string name="rb_friend_text">好友</string>
     <string name="rb_group_text">群聊</string>
     <string name="rb_my_text">我的</string>
+    <string name="friend_chat_et_input_text">请输入聊天内容</string>
+    <string name="friend_chat_btn_send_text">发　送</string>
 </resources>

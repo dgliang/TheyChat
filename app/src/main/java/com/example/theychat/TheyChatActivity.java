@@ -7,6 +7,8 @@ import android.widget.RadioGroup;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import com.example.theychat.adapter.TheyChatAdapter;
+
 import io.socket.client.Socket;
 
 public class TheyChatActivity extends AppCompatActivity {
@@ -31,7 +33,7 @@ public class TheyChatActivity extends AppCompatActivity {
         vp_content = findViewById(R.id.vp_content);
 
         // 构建一个翻页适配器
-        WeChatAdapter adapter = new WeChatAdapter(getSupportFragmentManager());
+        TheyChatAdapter adapter = new TheyChatAdapter(getSupportFragmentManager());
         vp_content.setAdapter(adapter);
 
         // 给翻页视图添加页面变更监听器
@@ -45,7 +47,7 @@ public class TheyChatActivity extends AppCompatActivity {
         });
 
         // 设置单选组的选中监听器
-        rg_bar = findViewById(R.id.rg_tabbar);
+        rg_bar = findViewById(R.id.rg_bar);
         rg_bar.setOnCheckedChangeListener((group, checkedId) -> {
             for (int pos = 0; pos < rg_bar.getChildCount(); pos++) {
                 RadioButton tab = (RadioButton) rg_bar.getChildAt(pos);

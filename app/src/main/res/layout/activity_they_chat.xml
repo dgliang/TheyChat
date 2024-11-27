@@ -11,7 +11,7 @@
         android:layout_weight="1" />
 
     <RadioGroup
-        android:id="@+id/rg_tabbar"
+        android:id="@+id/rg_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:orientation="horizontal">
