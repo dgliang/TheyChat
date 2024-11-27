@@ -60,4 +60,7 @@
     <string name="btn_send_text">发送文本消息</string>
     <string name="btn_choose_text">请选择待发送的图片</string>
     <string name="socket_io_image_btn_send_text">发送图片消息</string>
+    <string name="input_et_name_text">请输入您的昵称</string>
+    <string name="et_name_text">请输入昵称</string>
+    <string name="btn_login_text">登　录</string>
 </resources>

@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (view.getId() == R.id.btn_socketio_image) {
             startActivity(new Intent(this, SocketIOImageActivity.class));
         } else if (view.getId() == R.id.btn_we_login) {
-            startActivity(new Intent(this, WeLoginActivity.class));
+            startActivity(new Intent(this, TheyLoginActivity.class));
         } else if (view.getId() == R.id.btn_web_socket) {
             startActivity(new Intent(this, WebSocketActivity.class));
         }
