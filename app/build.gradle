@@ -39,5 +39,6 @@ dependencies {
     androidTestImplementation libs.espresso.core
     implementation libs.work.runtime
     implementation libs.gson
-    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation libs.okhttp
+    implementation libs.glide
 }
