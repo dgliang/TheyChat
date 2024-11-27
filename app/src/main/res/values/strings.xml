@@ -58,4 +58,6 @@
     <string name="btn_network_nine_text">网络视频(45秒处)</string>
     <string name="et_input_text">请输入聊天内容</string>
     <string name="btn_send_text">发送文本消息</string>
+    <string name="btn_choose_text">请选择待发送的图片</string>
+    <string name="socket_io_image_btn_send_text">发送图片消息</string>
 </resources>
