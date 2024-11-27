@@ -72,4 +72,11 @@
     <string name="friend_chat_btn_send_text">发　送</string>
     <string name="group_chat_et_input_text">请输入聊天内容</string>
     <string name="group_chat_btn_send_text">发　送</string>
+    <string name="dialog_et_input_text">请输入</string>
+    <string name="dialog_tv_cancel_text">取　消</string>
+    <string name="dialog_tv_confirm_text">确　定</string>
+    <string name="myinfo_avatar_text">头像</string>
+    <string name="iv_portrait_text"><![CDATA[>]]></string>
+    <string name="tv_nick_text">昵称</string>
+    <string name="myinfo_nick_text"><![CDATA[>]]></string>
 </resources>
