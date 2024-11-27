@@ -63,4 +63,9 @@
     <string name="input_et_name_text">请输入您的昵称</string>
     <string name="et_name_text">请输入昵称</string>
     <string name="btn_login_text">登　录</string>
+    <string name="web_socket_et_input_text">请输入消息文本</string>
+    <string name="web_socket_btn_send_text">发送WebSocket消息</string>
+    <string name="rb_friend_text">好友</string>
+    <string name="rb_group_text">群聊</string>
+    <string name="rb_my_text">我的</string>
 </resources>

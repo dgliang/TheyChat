@@ -37,7 +37,7 @@ public class TheyLoginActivity extends AppCompatActivity {
         }
 
         // 打开主界面，聊天界面
-        MainApplication.getInstance().wechatName = name;
+        MainApplication.getInstance().theyChatName = name;
         startActivity(new Intent(this, TheyChatActivity.class));
     }
 }
