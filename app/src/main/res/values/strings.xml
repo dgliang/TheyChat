@@ -52,4 +52,8 @@
     <string name="btn_download_text">下载网络图片</string>
     <string name="ck_fitxy_text">是否填满整个视图</string>
     <string name="sp_show_mode_text">显示方式：</string>
+    <string name="btn_gif_text">加载动图</string>
+    <string name="btn_local_cover_text">加载本地视频</string>
+    <string name="btn_network_one_text">网络视频(10秒处)</string>
+    <string name="btn_network_nine_text">网络视频(45秒处)</string>
 </resources>

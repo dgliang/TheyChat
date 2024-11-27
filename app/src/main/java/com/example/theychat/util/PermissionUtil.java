@@ -15,7 +15,7 @@ public class PermissionUtil {
         return checkPermission(act, new String[]{permission}, requestCode);
     }
 
-    // 检查多个权限。返回true表示已完全启用权限，返回false表示未完全启用权限
+    // 检查多个权限。true 表示已完全启用权限，false 表示未完全启用权限
     public static boolean checkPermission(Activity act, String[] permissions, int requestCode) {
         boolean result = true;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
