@@ -50,4 +50,6 @@
     <string name="ck_transition_text">是否呈现渐变动画</string>
     <string name="sp_cache_strategy_text">缓存策略：</string>
     <string name="btn_download_text">下载网络图片</string>
+    <string name="ck_fitxy_text">是否填满整个视图</string>
+    <string name="sp_show_mode_text">显示方式：</string>
 </resources>

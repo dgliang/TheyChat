@@ -8,9 +8,10 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import android.Manifest;
+
+import com.example.theychat.util.PermissionUtil;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
