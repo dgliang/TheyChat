@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, GlideSpecialActivity.class));
             }
         } else if (view.getId() == R.id.btn_socketio_text) {
-            startActivity(new Intent(this, SocketioTextActivity.class));
+            startActivity(new Intent(this, SocketIOTextActivity.class));
         } else if (view.getId() == R.id.btn_socketio_image) {
             startActivity(new Intent(this, SocketioImageActivity.class));
         } else if (view.getId() == R.id.btn_we_login) {
