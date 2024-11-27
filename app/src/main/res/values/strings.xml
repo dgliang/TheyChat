@@ -70,4 +70,6 @@
     <string name="rb_my_text">我的</string>
     <string name="friend_chat_et_input_text">请输入聊天内容</string>
     <string name="friend_chat_btn_send_text">发　送</string>
+    <string name="group_chat_et_input_text">请输入聊天内容</string>
+    <string name="group_chat_btn_send_text">发　送</string>
 </resources>
